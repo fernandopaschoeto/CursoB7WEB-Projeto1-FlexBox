@@ -117,7 +117,9 @@ nav ul li a:hover {
     color: #FFF;
 }
 
-.banner1, .banner2, .banner3 {
+.banner1,
+.banner2,
+.banner3 {
     flex: 1;
     color: #FFF;
     padding: 20px;
@@ -126,9 +128,11 @@ nav ul li a:hover {
 .banner1 {
     background-color: #39aae1;
 }
+
 .banner2 {
     background-color: #0079c7;
 }
+
 .banner3 {
     background-color: #2b4c99;
 }
@@ -143,11 +147,9 @@ nav ul li a:hover {
     margin: 20px 0;
 }
 
-.schedule_tasks {
+.schedule_tasks {}
 
-}
-
-.task{
+.task {
     font-size: 12px;
     display: flex;
     justify-content: space-between;
@@ -157,10 +159,275 @@ nav ul li a:hover {
 
 .task p {
     flex-direction: column;
+    margin-top: 20px;
 }
 
 #geral {
     display: flex;
     justify-content: center;
+    height: auto;
 }
 
+#geral section {
+    flex: 2;
+}
+
+#geral asside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 3px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news-data {
+    display: flex;
+
+}
+
+article .news-posted-at {
+    background-color: #2b4c99;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px;
+
+}
+
+article .news-comments {
+    background-color: #39aae1;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 2px;
+}
+
+article .news-tumb {
+    margin-top: 30px;
+}
+
+article .news-tumb img {
+    width: 100%;
+    height: auto;
+
+}
+
+article .news-title {
+    margin: 25px 0;
+    color: #000;
+    font-size: 25px;
+}
+
+article .news-resume {
+    font-size: 13px;
+    color: #5c5c5c;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+
+.departament {
+    width: 140px;
+    height: 140px;
+    background-color: #0079c7;
+    margin: 8px;
+}
+
+article .contact-resume {
+    font-size: 11px;
+    color: #5c5c5c;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+
+.contacts-appoiment {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #7c7c7c;
+}
+
+.imagem {
+    width: 20px;
+    height: 20px;
+    background-color: #7c7c7c;
+    margin-right: 8px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.footer-menu {
+    display: flex;
+    flex: 1;
+}
+
+.fm1,
+.fm2,
+.fm3 {
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.fm1 {
+    background-color: #39aae1;
+}
+
+.fm2 {
+    background-color: #0079c7;
+}
+
+.fm3 {
+    background-color: #2b4c99;
+}
+
+.footer-area {
+    display: flex;
+    color: #FFF;
+}
+
+.footer-area-item {
+    flex: 1;
+}
+
+footer .widget-title-text {
+    color: #FFF;
+}
+
+.footer-copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 0;
+    margin-right: 20px;
+}
+
+.mm-line {
+    height: 4px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 600px) {
+    .banner_headline {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral asside {
+        padding: 20px;
+    }
+
+    .container section {
+        margin-top: 70px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+
+/*
+Tina2021P@ssw0rd
+*/
